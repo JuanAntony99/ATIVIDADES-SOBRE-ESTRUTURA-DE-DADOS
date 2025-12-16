@@ -8,7 +8,7 @@ namespace ATIVIDADE7
 {
     public class TabelaHash
     {
-        private List<string>[] tabela = new List<string>[5];
+        private List<string>[] tabela = new List<string>[6];
 
         public TabelaHash()
         {
@@ -19,7 +19,7 @@ namespace ATIVIDADE7
         }
         private int FuncaoHash(string chave)
         {
-            return chave.Length % 5;
+            return chave.Length % 6;
         }
 
         public void Adicionar(string palavra)
@@ -56,6 +56,9 @@ namespace ATIVIDADE7
             dicionario.Adicionar("Dog");
             dicionario.Adicionar("Bird");
             dicionario.Adicionar("Ox");
+            dicionario.Adicionar("Mouse");
+            dicionario.Adicionar("It");
+            dicionario.Adicionar("F");
 
             dicionario.ExibirTabela();
         }
